@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+}
+
+.expense-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-infos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  .expense-label {
+    font-weight: bold;
+  }
+
+  .expense-cost::after {
+    content: '€';
+  }
+
+  .expense-date {
+    font-style: italic;
+  }
+}
+
+.trash-container {
+  cursor: pointer;
+}
+
+.users-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset-button {
+  margin: 0 0 1em 0;
+}
+
+.row {
+  width: 100%;
+
+  .col-sm {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.user-container {
+  padding: 1em;
+  width: 100%;
+
+  .user-total {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+
+.expenses {
+  margin: auto;
+}
+
+.form-group {
+  width: 30%;
+  margin: 1em 1em;
+  text-align: left;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.assesment {
+  font-weight: bold;
+  font-size: 1.3em;
+}

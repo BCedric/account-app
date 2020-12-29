@@ -1,0 +1,37 @@
+{
+  "name": "account_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --experimental-modules index.mjs",
+    "postinstall": "link-module-alias"
+  },
+  "_moduleAliases": {
+    "shared": "shared",
+    "controller": "controller",
+    "router": "router",
+    "entity": "entity"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "create-react-app": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "socket.io": "^3.0.3",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "link-module-alias": "^1.2.0"
+  }
+}

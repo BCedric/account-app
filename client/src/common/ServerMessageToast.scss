@@ -1,0 +1,13 @@
+.toast {
+  // position: relative;
+  float: left;
+  flex-basis: auto;
+}
+
+.toasts-container {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+}

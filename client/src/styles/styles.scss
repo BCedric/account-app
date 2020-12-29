@@ -1,0 +1,12 @@
+@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/_functions';
+@import 'bootstrap/scss/_variables';
+@import 'bootstrap/scss/_mixins';
+
+@import './Accounts.scss';
+@import './ChangePasswordForm.scss';
+@import './History.scss';
+@import './Login.scss';
+@import './Menu.scss';
+@import './ServerMessageToast.scss';
+@import './Spinner.scss';

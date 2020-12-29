@@ -1,0 +1,28 @@
+.quit-icon {
+  fill: $primary;
+  width: 2em;
+  cursor: pointer;
+  margin: 0 0.5em;
+  @media only screen and (min-width: 576px) {
+    display: none;
+  }
+}
+
+.menu-button {
+  margin-left: 0.5em;
+}
+
+.navbar-brand a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .disconnect-button {
+    display: none;
+  }
+
+  .change-password {
+    display: none;
+  }
+}
