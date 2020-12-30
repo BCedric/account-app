@@ -23,7 +23,7 @@ app.use(`${baseURL}/expense`, setExpensesRouter(null))
 app.use(`${baseURL}/user`, usersRouter)
 app.use(`${baseURL}/auth`, authRouter)
 
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(`${baseURL}/${path.join(__dirname, 'client/build')}`))
 app.get(baseURL, (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
