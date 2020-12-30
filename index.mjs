@@ -13,16 +13,18 @@ dotenv.config()
 
 const app = express()
 
+const baseURL = process.env.BASE_URL
+
 app.use(cors())
 
 app.use(bodyParser.json())
 
-app.use('/expense', setExpensesRouter(null))
-app.use('/user', usersRouter)
-app.use('/auth', authRouter)
+app.use(`${baseURL}/expense`, setExpensesRouter(null))
+app.use(`${baseURL}/user`, usersRouter)
+app.use(`${baseURL}/auth`, authRouter)
 
 app.use(express.static(path.join(__dirname, 'client/build')))
-app.get('', (req, res) => {
+app.get(baseURL, (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
 
