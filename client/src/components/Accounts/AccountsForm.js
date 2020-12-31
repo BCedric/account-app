@@ -20,7 +20,7 @@ const AccountsForm = ({ userId }) => {
       .catch(() => setMessage("Erreur de l'envoie", 'danger'))
   }
 
-  const isSubmitDisabled = isNaN(parseFloat(cost))
+  const isSubmitDisabled = isNaN(parseFloat(cost)) || label === '' || cost <= 0
 
   useEffect(() => {
     console.log(typeof cost, parseFloat(cost))
