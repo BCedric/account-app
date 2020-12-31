@@ -38,7 +38,6 @@ const passwordGen = async (req, res) => {
   try {
     const { password } = req.body
     const encryptedPassword = await generatePassword(password)
-    console.log(encryptedPassword)
     return res.json({ encrypted: encryptedPassword })
   } catch (err) {
     res.json({ err })
