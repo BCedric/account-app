@@ -3,7 +3,7 @@
 - installation des dépendances : `npm install`
 - copier build dans `client/build`
 - renseigner les variables d'environnement:
-  `ACCESS_TOKEN_SECRET=swsh23hjddnns ACCESS_TOKEN_LIFE=600 PORT=8081 BASE_URL=url`
+  `ACCESS_TOKEN_SECRET=token_secret ACCESS_TOKEN_LIFE=600 PORT=8081 BASE_URL=url`
 - démarrer le serveur: `npm run prod`
 
 # Installation dev
