@@ -14,3 +14,8 @@
 - renseigner les variables d'environnement: ` ACCESS_TOKEN_SECRET=token_secret ACCESS_TOKEN_LIFE=600 PORT=8081 BASE_URL=url`
 - démarrer le serveur: `npm start`
 - démarrer le serveur de développement du client: `cd client && npm start`
+
+# Compilation du client
+
+- définir la variable `REACT_APP_SERVER_URL=.` dans `client/.env`
+- dans compiler la build dans le dossier `client` : `npm run build`
