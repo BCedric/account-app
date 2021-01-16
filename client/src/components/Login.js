@@ -14,7 +14,6 @@ const Login = () => {
     event.preventDefault()
 
     logUser({ name, password }, dispatch).then((data) => {
-      console.log(data)
       if (data.user == null) {
         dispatch(setMessage("Erreur de l'authentification", 'danger'))
       }

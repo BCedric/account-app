@@ -8,8 +8,6 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import appReducer from './domain/app-reducer'
 
-console.log(process.env)
-
 const store = createStore(appReducer)
 
 ReactDOM.render(

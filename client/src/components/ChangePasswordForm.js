@@ -18,12 +18,6 @@ const ChangePasswordForm = () => {
 
   const submit = (event) => {
     event.preventDefault()
-    console.log(
-      currentPassword,
-      newPassword,
-      newPasswordConfirmation,
-      userConnected.id
-    )
     changePassword(userConnected.id, {
       currentPassword,
       newPassword,

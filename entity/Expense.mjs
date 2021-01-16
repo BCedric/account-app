@@ -26,7 +26,6 @@ class Expense {
       this.cost = cost
       this.isDeleted = isDeleted
       this.date = date
-      console.log('end init', this)
       return this
     } catch (err) {
       throw err
@@ -78,7 +77,6 @@ class Expense {
 
   delete() {
     try {
-      console.log('start delete')
       return DB.run('DELETE FROM expenses WHERE id = $expenseId', {
         $expenseId: this.id
       })

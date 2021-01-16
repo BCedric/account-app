@@ -22,10 +22,6 @@ const AccountsForm = ({ userId }) => {
 
   const isSubmitDisabled = isNaN(parseFloat(cost)) || label === '' || cost <= 0
 
-  useEffect(() => {
-    console.log(typeof cost, parseFloat(cost))
-  }, [cost])
-
   return (
     <form onSubmit={(event) => submit(event)}>
       <div className="input-container">

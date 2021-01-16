@@ -10,7 +10,6 @@ export function toastReducer(state = initialState, action) {
     return { messages }
   }
   if (action.type === toastActions.DELETE_MESSAGE) {
-    console.log('delete message', action)
     const messages = [...state.messages]
     const index =
       action.index != null ? accountActions.index : messages.length - 1

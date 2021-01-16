@@ -15,6 +15,5 @@ const genSalt = (saltRounds) =>
 export const generatePassword = async (password) => {
   const saltRounds = 10
   const salt = await genSalt(saltRounds)
-  console.log(salt)
   return await hashPassword(password, salt)
 }
