@@ -11,9 +11,7 @@ export const accountsApi = {
 }
 
 export const userApi = {
-  changePassword: (userId) => `/user/${userId}/changepassword`
-}
-
-export const usersApi = {
+  changePassword: (userId) => `/user/${userId}/changepassword`,
+  reset: () => '/user/reset',
   users: () => '/user'
 }

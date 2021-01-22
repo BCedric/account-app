@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { putResetExpenses } from '../../domain/accounts/Accounts-actions'
 
 const AccountReset = () => {
   const [isResetMessageDisplayed, setIsResetMessageDisplayed] = useState(false)
   const hide = () => setIsResetMessageDisplayed(false)
-  const confirmReset = () => {}
+  const dispatch = useDispatch()
+  const confirmReset = () => putResetExpenses(dispatch).then(() => hide())
 
   return (
     <React.Fragment>

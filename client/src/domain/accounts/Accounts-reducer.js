@@ -29,6 +29,10 @@ export function accountReducer(state = initialState, action) {
       users: Array.from(state.users, (u) => (u.id === user.id ? user : u))
     }
   }
+
+  if (action.type === accountActions.RESET_EXPENSES) {
+    return { ...state, users: action.users }
+  }
   return state
 }
 

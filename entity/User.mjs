@@ -43,6 +43,14 @@ export default class User {
     }
   }
 
+  static async resetAll() {
+    try {
+      return DB.all('UPDATE expenses SET isDeleted = true')
+    } catch (error) {
+      throw err
+    }
+  }
+
   async getExpenses(id) {
     return new Promise(async (resolve, reject) => {
       try {

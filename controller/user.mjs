@@ -43,4 +43,15 @@ const changePassword = async (req, res) => {
   }
 }
 
-export { getUsers, getUser, changePassword }
+const putResetExpenses = async (req, res) => {
+  try {
+    await User.resetAll()
+    return res.json({ users: await User.all() })
+  } catch (err) {
+    return res.json({
+      err: 'cannot reset'
+    })
+  }
+}
+
+export { getUsers, getUser, changePassword, putResetExpenses }
